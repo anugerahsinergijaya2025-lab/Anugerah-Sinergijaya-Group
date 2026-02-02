@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anugerah Sinergijaya Group | Depot Air Minum RO</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#fff;color:#222;line-height:1.6}
+a{text-decoration:none}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  background:#fff;
+  z-index:1000;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+.header{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  animation:logoFloat 4s ease-in-out infinite;
+}
+.logo img{height:46px}
+.logo span{
+  font-weight:700;
+  font-size:17px;
+  color:#0d6efd;
+}
+@keyframes logoFloat{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
+  100%{transform:translateY(0)}
+}
+nav a{
+  margin-left:20px;
+  color:#333;
+  font-weight:600;
+}
+nav a:hover{color:#0d6efd}
+
+/* HERO */
+.hero{
+  background:
+  linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+  url("2.jpeg") center/cover no-repeat;
+  color:#fff;
+  padding:100px 20px;
+}
+.hero-inner{
+  max-width:1200px;
+  margin:auto;
+}
+.hero h1{font-size:36px;margin-bottom:12px}
+.hero p{max-width:620px}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  background:#25d366;
+  color:#000;
+  padding:12px 24px;
+  border-radius:30px;
+  font-weight:700;
+}
+
+/* SECTION */
+section{padding:70px 20px}
+.container{max-width:1200px;margin:auto}
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
+.title h2{
+  font-size:30px;
+  color:#0d6efd;
+  margin-bottom:10px;
+}
+.title p{color:#555}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+.card .text{
+  padding:14px;
+  font-weight:600;
+  text-align:center;
+}
+
+/* JASA */
+.jasa{
+  background:#f5f7fa;
+}
+.jasa ul{
+  max-width:700px;
+  margin:0 auto;
+  list-style:none;
+}
+.jasa li{
+  padding:12px 0;
+  border-bottom:1px dashed #ccc;
+}
+
+/* FOOTER */
+footer{
+  background:#0d6efd;
+  color:#fff;
+  padding:40px 20px;
+}
+.footer{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+.copy{
+  text-align:center;
+  margin-top:30px;
+  font-size:14px;
+  opacity:.9;
+}
+
+@media(max-width:900px){
+  .hero h1{font-size:26px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header">
+    <div class="logo">
+      <img src="logo.jpeg" alt="Logo">
+      <span>Anugerah<br>Sinergijaya Group</span>
+    </div>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#jasa">Jasa</a>
+      <a href="#pemasangan">Pemasangan</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Depot Air Minum RO Profesional</h1>
+    <p>Melayani pembuatan, penjualan, dan pemasangan depot air minum RO dengan sistem higienis & modern.</p>
+    <a class="btn" href="https://wa.me/6285694319000" target="_blank">Hubungi WhatsApp</a>
+  </div>
+</div>
+
+<!-- PRODUK -->
+<section id="produk">
+  <div class="container">
+    <div class="title">
+      <h2>Produk & Perangkat</h2>
+      <p>Perangkat depot air minum RO berkualitas</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><img src="1.jpeg"><div class="text">Mesin Depot RO</div></div>
+      <div class="card"><img src="2.jpeg"><div class="text">Depot RO LED</div></div>
+      <div class="card"><img src="3.jpeg"><div class="text">Proses Pengisian</div></div>
+      <div class="card"><img src="4.jpeg"><div class="text">Instalasi Mesin</div></div>
+      <div class="card"><img src="5.jpeg"><div class="text">Kabinet Depot</div></div>
+      <div class="card"><img src="6.jpeg"><div class="text">Tangki Air</div></div>
+      <div class="card"><img src="7.jpeg"><div class="text">Workshop</div></div>
+      <div class="card"><img src="8.jpeg"><div class="text">Depot Siap Operasi</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- JASA -->
+<section id="jasa" class="jasa">
+  <div class="container">
+    <div class="title">
+      <h2>Jasa Kami</h2>
+      <p>Layanan lengkap depot air minum RO</p>
+    </div>
+    <ul>
+      <li>✔️ Pembuatan depot air minum RO</li>
+      <li>✔️ Penjualan mesin & perlengkapan RO</li>
+      <li>✔️ Jasa pemasangan depot air minum</li>
+      <li>✔️ Renovasi & upgrade depot</li>
+      <li>✔️ Servis & perawatan rutin</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PEMASANGAN -->
+<section id="pemasangan">
+  <div class="container">
+    <div class="title">
+      <h2>Jasa Pemasangan Depot RO</h2>
+      <p>Dokumentasi pemasangan di berbagai lokasi</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><img src="pemasangan1.jpeg"><div class="text">Pemasangan 1</div></div>
+      <div class="card"><img src="pemasangan2.jpeg"><div class="text">Pemasangan 2</div></div>
+      <div class="card"><img src="pemasangan3.jpeg"><div class="text">Pemasangan 3</div></div>
+      <div class="card"><img src="pemasangan4.jpeg"><div class="text">Pemasangan 4</div></div>
+      <div class="card"><img src="pemasangan5.jpeg"><div class="text">Pemasangan 5</div></div>
+      <div class="card"><img src="pemasangan6.jpeg"><div class="text">Pemasangan 6</div></div>
+      <div class="card"><img src="pemasangan7.jpeg"><div class="text">Pemasangan 7</div></div>
+      <div class="card"><img src="pemasangan8.jpeg"><div class="text">Pemasangan 8</div></div>
+      <div class="card"><img src="pemasangan9.jpeg"><div class="text">Pemasangan 9</div></div>
+      <div class="card"><img src="pemasangan10.jpeg"><div class="text">Pemasangan 10</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer">
+    <div>
+      <h3>Anugerah Sinergijaya Group</h3>
+      <p>Spesialis depot air minum RO profesional, higienis, dan terpercaya.</p>
+    </div>
+    <div>
+      <h3>Kontak</h3>
+      <p>WhatsApp: 0856-9431-9000</p>
+    </div>
+  </div>
+  <div class="copy">
+    © 2026 Anugerah Sinergijaya Group
+  </div>
+</footer>
+
+</body>
+</html>
