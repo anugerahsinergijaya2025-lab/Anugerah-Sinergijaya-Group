@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anugerah Air Minum Pegunungan</title>
+
+<style>
+:root{
+  --biru:#0d6efd;
+  --biru-gelap:#083d77;
+  --abu:#f5f7fa;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#fff;
+  color:#222;
+}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+.header-wrap{
+  max-width:1200px;
+  margin:auto;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  animation:fadeSlide 1.2s ease;
+}
+.logo img{
+  height:48px;
+}
+.logo span{
+  font-weight:700;
+  font-size:18px;
+  color:var(--biru-gelap);
+}
+nav a{
+  margin-left:18px;
+  font-weight:600;
+  color:#333;
+}
+nav a:hover{color:var(--biru)}
+
+@keyframes fadeSlide{
+  from{opacity:0;transform:translateY(-10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+  url("2.jpeg") center/cover no-repeat;
+  color:#fff;
+  padding:90px 20px;
+}
+.hero-inner{
+  max-width:1200px;
+  margin:auto;
+}
+.hero h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+.hero p{
+  max-width:600px;
+  line-height:1.6;
+}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 22px;
+  background:var(--biru);
+  color:#fff;
+  border-radius:6px;
+  font-weight:600;
+}
+
+/* SECTION */
+section{
+  padding:70px 20px;
+}
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+.section-title h2{
+  font-size:30px;
+  margin-bottom:10px;
+  color:var(--biru-gelap);
+}
+.section-title p{color:#555}
+
+/* GRID IMAGE */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+.card .text{
+  padding:15px;
+  font-weight:600;
+  text-align:center;
+}
+
+/* JASA */
+.jasa{
+  background:var(--abu);
+}
+.jasa ul{
+  max-width:700px;
+  margin:0 auto 40px;
+  padding:0;
+  list-style:none;
+}
+.jasa li{
+  padding:10px 0;
+  border-bottom:1px dashed #ccc;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:#ddd;
+  padding:40px 20px;
+}
+footer .container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+footer h3{color:#fff}
+footer p{line-height:1.6}
+.copyright{
+  text-align:center;
+  margin-top:30px;
+  font-size:14px;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-wrap">
+    <div class="logo">
+      <img src="logo.jpeg" alt="Logo Anugerah">
+      <span>ANUGERAH<br>Air Minum Pegunungan</span>
+    </div>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#jasa">Jasa</a>
+      <a href="#pemasangan">Pemasangan</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Depot Air Minum RO Profesional</h1>
+    <p>Melayani pembuatan, penjualan, dan pemasangan perangkat depot air minum RO dengan kualitas terbaik dan standar higienis.</p>
+    <a href="#jasa" class="btn">Lihat Layanan</a>
+  </div>
+</div>
+
+<!-- PRODUK -->
+<section id="produk">
+  <div class="container">
+    <div class="section-title">
+      <h2>Produk & Perangkat</h2>
+      <p>Mesin depot air minum RO & perlengkapannya</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><img src="1.jpeg"><div class="text">Mesin Depot RO</div></div>
+      <div class="card"><img src="2.jpeg"><div class="text">Depot RO LED</div></div>
+      <div class="card"><img src="3.jpeg"><div class="text">Proses Pengisian</div></div>
+      <div class="card"><img src="4.jpeg"><div class="text">Instalasi RO</div></div>
+      <div class="card"><img src="5.jpeg"><div class="text">Kabinet Depot</div></div>
+      <div class="card"><img src="6.jpeg"><div class="text">Tangki Air</div></div>
+      <div class="card"><img src="7.jpeg"><div class="text">Workshop</div></div>
+      <div class="card"><img src="8.jpeg"><div class="text">Mesin RO Siap Pakai</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- JASA -->
+<section id="jasa" class="jasa">
+  <div class="container">
+    <div class="section-title">
+      <h2>Jasa Kami</h2>
+      <p>Layanan lengkap depot air minum RO</p>
+    </div>
+
+    <ul>
+      <li>✔️ Pembuatan depot air minum RO</li>
+      <li>✔️ Jual mesin & perangkat RO</li>
+      <li>✔️ Jasa pemasangan depot air minum RO</li>
+      <li>✔️ Upgrade & renovasi depot</li>
+      <li>✔️ Servis & perawatan berkala</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PEMASANGAN -->
+<section id="pemasangan">
+  <div class="container">
+    <div class="section-title">
+      <h2>Jasa Pemasangan Depot RO</h2>
+      <p>Dokumentasi pemasangan di berbagai lokasi</p>
+    </div>
+
+    <div class="grid">
+      <div class="card"><img src="Pemasangan1.jpeg"><div class="text">Pemasangan 1</div></div>
+      <div class="card"><img src="Pemasangan2.jpeg"><div class="text">Pemasangan 2</div></div>
+      <div class="card"><img src="Pemasangan3.jpeg"><div class="text">Pemasangan 3</div></div>
+      <div class="card"><img src="Pemasangan4.jpeg"><div class="text">Pemasangan 4</div></div>
+      <div class="card"><img src="Pemasangan5.jpeg"><div class="text">Pemasangan 5</div></div>
+      <div class="card"><img src="Pemasangan6.jpeg"><div class="text">Pemasangan 6</div></div>
+      <div class="card"><img src="Pemasangan7.jpeg"><div class="text">Pemasangan 7</div></div>
+      <div class="card"><img src="Pemasangan8.jpeg"><div class="text">Pemasangan 8</div></div>
+      <div class="card"><img src="Pemasangan9.jpeg"><div class="text">Pemasangan 9</div></div>
+      <div class="card"><img src="Pemasangan10.jpeg"><div class="text">Pemasangan 10</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div>
+      <h3>Anugerah Air Minum Pegunungan</h3>
+      <p>Spesialis depot air minum RO profesional, higienis, dan terpercaya.</p>
+    </div>
+    <div>
+      <h3>Kontak</h3>
+      <p>📞 WhatsApp: 08xxxxxxxxxx<br>
+         📍 Indonesia</p>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Anugerah Group
+  </div>
+</footer>
+
+</body>
+</html>
